@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ubah Mahasiswa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+      <div class="container-fluid">
+        <a class="navbar-brand text-dark" href="/dasbord/index.html">Dasboard</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html">My Portofolio</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <div class="row">
+      <div class="col-md-2" style="background-color: #98f898">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="/dasbord/index.html">Dasboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/dasbord/visi.html">Visi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/dasbord/misi.html">Misi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/dasbord/galeri.html">Galeri</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="http://127.0.0.1:5000">Hobi</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md" style="background-color: #ffff; padding: 4rem; padding-right: 8rem">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-between">
+          <h1>Ubah Hobby</h1>
+        </div>
+        <form method="post">
+          <div class="mb-3">
+            <label for="nama" class="form-label">Ubah Hobi</label>
+            <input type="text" class="form-control" name="nama" required />
+          </div>
+          <div class="mb-3">
+            <label for="nim" class="form-label">Jadwal</label>
+            <input type="text" class="form-control" name="nim" required />
+          </div>
+          <div class="mb-3">
+            <label for="jurusan" class="form-label">Club</label>
+            <input type="text" class="form-control" name="jurusan" required />
+          </div>
+
+          <div class="d-grid gap-2 d-md-flex justify-content-md-between">
+            <button type="submit" class="btn" style="background-color: #98f898;">Simpan</button>
+            <a href="{{ url_for('index') }}">
+              <button class="btn me-md-2 text-dark" style="background-color: #98f898;"  type="button">Kembali ke data Hobi</button>
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#98f898"
+        fill-opacity="1"
+        d="M0,128L40,149.3C80,171,160,213,240,218.7C320,224,400,192,480,181.3C560,171,640,181,720,170.7C800,160,880,128,960,128C1040,128,1120,160,1200,160C1280,160,1360,128,1400,112L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+      ></path>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

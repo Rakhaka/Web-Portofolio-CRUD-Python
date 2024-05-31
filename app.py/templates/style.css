@@ -1,0 +1,8 @@
+.row .col {
+  position: fixed;
+  background: #98f898;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
